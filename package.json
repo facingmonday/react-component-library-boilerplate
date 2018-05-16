@@ -4,8 +4,8 @@
   "description": "A boilerplate for building your own React component library.",
   "main": "dist/bundle.js",
   "scripts": {
-    "build:lib": "node ./node_modules/webpack/bin/webpack --watch -p --progress --config webpack.config.lib.js",
-    "build:umd": "node ./node_modules/webpack/bin/webpack --watch -p --progress --config webpack.config.umd.js",
+    "build:lib": "node ./node_modules/webpack/bin/webpack -p --progress --config webpack.config.lib.js",
+    "build:umd": "node ./node_modules/webpack/bin/webpack -p --progress --config webpack.config.umd.js",
     "run": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "cosmos": "node ./node_modules/react-cosmos/bin/cosmos",
     "cosmos:export": "node ./node_modules/react-cosmos/bin/cosmos-export"
@@ -13,6 +13,7 @@
   "author": "Jason Price",
   "license": "MIT",
   "dependencies": {
+    "less": "^3.0.4",
     "react": "^16.3.2",
     "react-cosmos": "^3.7.1",
     "react-radio-group": "^3.0.3"
@@ -26,9 +27,12 @@
     "css-loader": "^0.28.11",
     "directory-named-webpack-plugin": "^4.0.0",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "less-loader": "^4.1.0",
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
+    "style-loader": "^0.21.0",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.2"
   }
